@@ -12,6 +12,8 @@ Fast video proxy generator with GPU acceleration support. Perfect for video edit
 
 ## Installation
 
+### Linux / macOS
+
 ```bash
 # Clone the repo
 git clone https://github.com/yourusername/prx.git
@@ -22,11 +24,7 @@ chmod +x proxy-gen.sh
 sudo ln -s $(pwd)/proxy-gen.sh /usr/local/bin/prx
 ```
 
-### Dependencies
-
-- `ffmpeg` with your GPU encoder support
-- `bc` (usually pre-installed)
-
+Dependencies:
 ```bash
 # Arch Linux
 sudo pacman -S ffmpeg bc
@@ -37,6 +35,12 @@ sudo apt install ffmpeg bc
 # macOS
 brew install ffmpeg bc
 ```
+
+### Windows
+
+1. Install [ffmpeg](https://www.gyan.dev/ffmpeg/builds/) and add to PATH
+2. Download `prx.bat` to a folder in your PATH (e.g., `C:\Tools`)
+3. Or run directly: `prx.bat video.mp4`
 
 ## Usage
 
